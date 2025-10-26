@@ -2,7 +2,7 @@
 
 [![Curseforge](http://cf.way2muchnoise.eu/full_1372716_downloads(0D0D0D-F16436-fff-010101-fff).svg)](https://www.curseforge.com/minecraft/mc-mods/copper-shears)
 [![Curseforge](http://cf.way2muchnoise.eu/versions/For%20MC_1372716_all(0D0D0D-F16436-fff-010101).svg)](https://www.curseforge.com/minecraft/mc-mods/copper-shears/files)
-[![Modrinth](https://img.shields.io/modrinth/dt/qaMUpFM4?label=Modrinth&logo=modrinth)](https://modrinth.com/mod/copper-shears)
+[![Modrinth](https://img.shields.io/modrinth/dt/CscvWDrj?label=Modrinth&logo=modrinth)](https://modrinth.com/mod/copper-shears)
 [![CI/CD](https://github.com/cech12/CopperShears/actions/workflows/cicd-workflow.yml/badge.svg)](https://github.com/cech12/CopperShears/actions/workflows/cicd-workflow.yml)
 [![CodeFactor](https://www.codefactor.io/repository/github/cech12/coppershears/badge)](https://www.codefactor.io/repository/github/cech12/coppershears)
 [![gitlocalized](https://gitlocalize.com/repo/10511/whole_project/badge.svg)](https://gitlocalize.com/repo/8142/?utm_source=badge)
