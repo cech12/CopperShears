@@ -1,9 +1,0 @@
-{
-  "item.coppershears.copper_shears": "Керамические ножницы",
-
-  "text.autoconfig.coppershears.option.DURABILITY": "Прочность керамических ножниц",
-  "text.autoconfig.coppershears.option.DURABILITY.@Tooltip[0]": "§6§lПрочность керамических ножниц",
-  "text.autoconfig.coppershears.option.DURABILITY.@Tooltip[1]": "Определяет максимальную прочность керамических ножниц.",
-  "text.autoconfig.coppershears.option.DURABILITY.@Tooltip[2]": "§7§oПо умолчанию: 179",
-  "text.autoconfig.coppershears.option.DURABILITY.@Tooltip[3]": "§7§o0: отключает прочность у предмета"
-}

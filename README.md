@@ -5,7 +5,7 @@
 [![Modrinth](https://img.shields.io/modrinth/dt/qaMUpFM4?label=Modrinth&logo=modrinth)](https://modrinth.com/mod/copper-shears)
 [![CI/CD](https://github.com/cech12/CopperShears/actions/workflows/cicd-workflow.yml/badge.svg)](https://github.com/cech12/CopperShears/actions/workflows/cicd-workflow.yml)
 [![CodeFactor](https://www.codefactor.io/repository/github/cech12/coppershears/badge)](https://www.codefactor.io/repository/github/cech12/coppershears)
-[![gitlocalized](https://gitlocalize.com/repo/XXXX/whole_project/badge.svg)](https://gitlocalize.com/repo/8142/?utm_source=badge)
+[![gitlocalized](https://gitlocalize.com/repo/10511/whole_project/badge.svg)](https://gitlocalize.com/repo/8142/?utm_source=badge)
 [![License](https://img.shields.io/github/license/cech12/CopperShears)](http://opensource.org/licenses/MIT)
 [![](https://img.shields.io/discord/752506676719910963.svg?style=flat&color=informational&logo=discord&label=Discord)](https://discord.gg/gRUFH5t)
 
