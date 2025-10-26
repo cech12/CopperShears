@@ -17,14 +17,14 @@ import net.neoforged.neoforge.registries.DeferredRegister;
  */
 @SuppressWarnings("unused")
 @Mod(Constants.MOD_ID)
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class NeoforgeCopperShearsMod {
 
     /** mod specific item registry */
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Constants.MOD_ID);
 
     static {
-        Constants.COPPER_SHEARS = ITEMS.register("copper_shears", NeoforgeCopperShearsItem::new);
+        Constants.COPPER_SHEARS = ITEMS.registerItem("copper_shears", NeoforgeCopperShearsItem::new);
     }
 
     /**

@@ -6,10 +6,12 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.dispenser.ShearsDispenseItemBehavior;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.DispenserBlock;
+
+import java.util.function.Function;
 
 /**
  * Mod class for the Fabric loader.
@@ -19,10 +21,15 @@ public class FabricCopperShearsMod implements ModInitializer {
 
     /** copper shears item registry object */
 
-    public static final Item COPPER_SHEARS = Registry.register(BuiltInRegistries.ITEM, Constants.id("copper_shears"), new CopperShearsItem());
+    public static final Item COPPER_SHEARS = registerItem("copper_shears", CopperShearsItem::new);
 
     static {
         Constants.COPPER_SHEARS = () -> COPPER_SHEARS;
+    }
+
+    private static Item registerItem(String name, Function<Item.Properties, Item> itemConstructor) {
+        ResourceKey<Item> resourceKey = ResourceKey.create(BuiltInRegistries.ITEM.key(), Constants.id(name));
+        return Registry.register(BuiltInRegistries.ITEM, resourceKey, itemConstructor.apply(new Item.Properties().setId(resourceKey)));
     }
 
     /**

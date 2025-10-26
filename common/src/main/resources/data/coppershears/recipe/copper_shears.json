@@ -6,9 +6,7 @@
      "# "
   ],
   "key": {
-    "#": {
-      "tag": "c:ingots/copper"
-    }
+    "#": "#c:ingots/copper"
 },
   "result": {
     "id": "coppershears:copper_shears"

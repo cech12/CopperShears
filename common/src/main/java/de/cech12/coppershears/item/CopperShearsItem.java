@@ -11,8 +11,8 @@ public class CopperShearsItem extends ShearsItem {
     /**
      * Constructs a CopperShearsItem by configure it to stack to one item.
      */
-    public CopperShearsItem() {
-        super((new Properties()).stacksTo(1).component(DataComponents.TOOL, ShearsItem.createToolProperties()));
+    public CopperShearsItem(Properties properties) {
+        super(properties.stacksTo(1).component(DataComponents.TOOL, ShearsItem.createToolProperties()));
     }
 
 }
