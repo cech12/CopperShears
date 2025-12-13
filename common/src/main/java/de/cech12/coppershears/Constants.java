@@ -1,6 +1,6 @@
 package de.cech12.coppershears;
 
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Item;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,12 +25,12 @@ public class Constants {
     private Constants() {}
 
     /**
-     * Static method to create a ResourceLocation for this mod.
-     * @param name name/path of the ResourceLocation
-     * @return ResourceLocation object
+     * Static method to create an Identifier for this mod.
+     * @param name name/path of the Identifier
+     * @return Identifier object
      */
-    public static ResourceLocation id(String name) {
-        return ResourceLocation.fromNamespaceAndPath(MOD_ID, name);
+    public static Identifier id(String name) {
+        return Identifier.fromNamespaceAndPath(MOD_ID, name);
     }
 
 }
