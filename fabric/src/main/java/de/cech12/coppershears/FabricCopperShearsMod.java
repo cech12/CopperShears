@@ -2,7 +2,7 @@ package de.cech12.coppershears;
 
 import de.cech12.coppershears.item.CopperShearsItem;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.dispenser.ShearsDispenseItemBehavior;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -39,7 +39,7 @@ public class FabricCopperShearsMod implements ModInitializer {
     public void onInitialize() {
         CommonLoader.init();
         //Register item in the creative tab.
-        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(content -> {
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(content -> {
             content.accept(COPPER_SHEARS);
         });
         //register dispense behavior
