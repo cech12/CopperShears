@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [this versioning scheme](https://gist.github.com/cech12/69319028e88c50349a6b044000a6607b).
 
+## [1.21.5-1.3.0.1] - 2026-04-27
+### Fixed
+- fixed server crash when using Copper Shears (all loaders) (thanks to SigmaFlame for the report) #4
+
 ## [1.21.5-1.3.0.0] - 2025-10-26
 - updated to Minecraft 1.21.5 (Fabric 0.128.2+1.21.5, NeoForge 21.5.95, Forge 55.1.0)
 - updated Cloth Config support (18.0.145) (Fabric/Quilt)
