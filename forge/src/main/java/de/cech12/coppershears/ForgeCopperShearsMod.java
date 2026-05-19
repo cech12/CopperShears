@@ -29,7 +29,7 @@ public class ForgeCopperShearsMod {
     /** mod specific item registry */
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Constants.MOD_ID);
 
-    public static RegistryObject<Item> COPPER_SHEARS = registerItem("copper_shears", CopperShearsItem::new);
+    public static final RegistryObject<Item> COPPER_SHEARS = registerItem("copper_shears", CopperShearsItem::new);
 
     private static RegistryObject<Item> registerItem(String name, Function<Item.Properties, Item> itemConstructor) {
         return ITEMS.register(name, () -> itemConstructor.apply(new Item.Properties().setId(ResourceKey.create(BuiltInRegistries.ITEM.key(), Constants.id(name)))));
