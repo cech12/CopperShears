@@ -1,6 +1,6 @@
 package de.cech12.coppershears;
 
-import de.cech12.coppershears.item.NeoforgeCopperShearsItem;
+import de.cech12.coppershears.item.CopperShearsItem;
 import net.minecraft.core.dispenser.ShearsDispenseItemBehavior;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.DispenserBlock;
@@ -24,7 +24,7 @@ public class NeoforgeCopperShearsMod {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Constants.MOD_ID);
 
     static {
-        Constants.COPPER_SHEARS = ITEMS.registerItem("copper_shears", NeoforgeCopperShearsItem::new);
+        Constants.COPPER_SHEARS = ITEMS.registerItem("copper_shears", CopperShearsItem::new);
     }
 
     /**
