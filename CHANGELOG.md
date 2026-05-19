@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [this versioning scheme](https://gist.github.com/cech12/69319028e88c50349a6b044000a6607b).
 
+## [1.21.11-1.6.2.0] - 2026-05-19
+### Added
+- smelting & blasting recipes to turn copper shears to copper nuggets (all loaders)
+
 ## [1.21.11-1.6.1.0] - 2026-05-19
 ### Added
 - the possibility to fuse two damaged copper shears via crafting for repairing (all loaders) (thanks to bixqa for the idea) https://github.com/cech12/WoodenShears/issues/38

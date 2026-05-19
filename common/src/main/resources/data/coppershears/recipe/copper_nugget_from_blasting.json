@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    "coppershears:copper_shears"
+  ],
+  "result": {
+    "id": "minecraft:copper_nugget"
+  }
+}
