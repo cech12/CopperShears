@@ -1,7 +1,7 @@
 package de.cech12.coppershears.mixin;
 
 import com.google.common.collect.ImmutableList;
-import de.cech12.coppershears.Constants;
+import de.cech12.coppershears.FabricCopperShearsMod;
 import de.cech12.coppershears.mixin.accessor.HolderSetDirectAccessor;
 import net.fabricmc.fabric.api.event.lifecycle.v1.CommonLifecycleEvents;
 import net.minecraft.advancements.criterion.ItemPredicate;
@@ -35,7 +35,7 @@ public abstract class MatchToolMixin implements LootItemCondition {
 
     static {
         CommonLifecycleEvents.TAGS_LOADED.register((registries, client) -> {
-            Holder<Item> copperShearsHolder = BuiltInRegistries.ITEM.wrapAsHolder(Constants.COPPER_SHEARS.get());
+            Holder<Item> copperShearsHolder = BuiltInRegistries.ITEM.wrapAsHolder(FabricCopperShearsMod.COPPER_SHEARS);
             Holder<Item> shearsHolder = BuiltInRegistries.ITEM.wrapAsHolder(Items.SHEARS);
             //add copper shears to all MatchTool predicates that contains vanilla shears
             for (ItemPredicate itemPredicate : ITEM_PREDICATES) {

@@ -3,6 +3,7 @@ package de.cech12.coppershears;
 import de.cech12.coppershears.item.CopperShearsItem;
 import net.minecraft.core.dispenser.ShearsDispenseItemBehavior;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.DispenserBlock;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -10,6 +11,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 /**
@@ -23,9 +25,7 @@ public class NeoforgeCopperShearsMod {
     /** mod specific item registry */
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Constants.MOD_ID);
 
-    static {
-        Constants.COPPER_SHEARS = ITEMS.registerItem("copper_shears", CopperShearsItem::new);
-    }
+    public static final DeferredItem<Item> COPPER_SHEARS = ITEMS.registerItem("copper_shears", CopperShearsItem::new);
 
     /**
      * Constructor of a mod instance.
@@ -41,7 +41,7 @@ public class NeoforgeCopperShearsMod {
      */
     @SubscribeEvent
     public static void registerDispenseBehavior(FMLCommonSetupEvent event) {
-        DispenserBlock.registerBehavior(Constants.COPPER_SHEARS.get(), new ShearsDispenseItemBehavior());
+        DispenserBlock.registerBehavior(COPPER_SHEARS.get(), new ShearsDispenseItemBehavior());
     }
 
     /**
@@ -51,7 +51,7 @@ public class NeoforgeCopperShearsMod {
     @SubscribeEvent
     public static void addItemsToTabs(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-            event.accept(Constants.COPPER_SHEARS.get());
+            event.accept(COPPER_SHEARS.get());
         }
     }
 

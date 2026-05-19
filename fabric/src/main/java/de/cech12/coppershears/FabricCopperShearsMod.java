@@ -23,10 +23,6 @@ public class FabricCopperShearsMod implements ModInitializer {
 
     public static final Item COPPER_SHEARS = registerItem("copper_shears", CopperShearsItem::new);
 
-    static {
-        Constants.COPPER_SHEARS = () -> COPPER_SHEARS;
-    }
-
     private static Item registerItem(String name, Function<Item.Properties, Item> itemConstructor) {
         ResourceKey<Item> resourceKey = ResourceKey.create(BuiltInRegistries.ITEM.key(), Constants.id(name));
         return Registry.register(BuiltInRegistries.ITEM, resourceKey, itemConstructor.apply(new Item.Properties().setId(resourceKey)));
