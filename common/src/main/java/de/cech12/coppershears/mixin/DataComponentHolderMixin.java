@@ -22,7 +22,7 @@ public interface DataComponentHolderMixin {
     DataComponentMap getComponents();
 
     @Unique
-    default Item ceramicshears$getItem() {
+    default Item coppershears$getItem() {
         if ((Object) this instanceof ItemStack stack) {
             return stack.getItem();
         }
@@ -31,7 +31,7 @@ public interface DataComponentHolderMixin {
 
     @Inject(at = @At("RETURN"), method = "get", cancellable = true)
     default <T> void getProxy(DataComponentType<? extends T> type, CallbackInfoReturnable<T> cir) {
-        if (cir.getReturnValue() == null && this.ceramicshears$getItem() instanceof CopperShearsItem && Services.CONFIG.getDurability() > 0) {
+        if (cir.getReturnValue() == null && this.coppershears$getItem() instanceof CopperShearsItem && Services.CONFIG.getDurability() > 0) {
             if (type == DataComponents.MAX_DAMAGE) {
                 cir.setReturnValue((T) Integer.valueOf(Services.CONFIG.getDurability()));
             } else if (type == DataComponents.DAMAGE) {
@@ -42,7 +42,7 @@ public interface DataComponentHolderMixin {
 
     @Inject(at = @At("HEAD"), method = "getOrDefault", cancellable = true)
     default <T> void getOrDefaultProxy(DataComponentType<? extends T> type, T defaultValue, CallbackInfoReturnable<T> cir) {
-        if ((type == DataComponents.MAX_DAMAGE || type == DataComponents.DAMAGE) && this.ceramicshears$getItem() instanceof CopperShearsItem && Services.CONFIG.getDurability() > 0) {
+        if ((type == DataComponents.MAX_DAMAGE || type == DataComponents.DAMAGE) && this.coppershears$getItem() instanceof CopperShearsItem && Services.CONFIG.getDurability() > 0) {
             T value = getComponents().get(type);
             if (type == DataComponents.MAX_DAMAGE) {
                 cir.setReturnValue(value != null ? value : (T) Integer.valueOf(Services.CONFIG.getDurability()));
@@ -54,7 +54,7 @@ public interface DataComponentHolderMixin {
 
     @Inject(at = @At("HEAD"), method = "has", cancellable = true)
     default void hasProxy(DataComponentType<?> type, CallbackInfoReturnable<Boolean> cir) {
-        if ((type == DataComponents.MAX_DAMAGE || type == DataComponents.DAMAGE) && this.ceramicshears$getItem() instanceof CopperShearsItem) {
+        if ((type == DataComponents.MAX_DAMAGE || type == DataComponents.DAMAGE) && this.coppershears$getItem() instanceof CopperShearsItem) {
             cir.setReturnValue(Services.CONFIG.getDurability() > 0);
         }
     }
