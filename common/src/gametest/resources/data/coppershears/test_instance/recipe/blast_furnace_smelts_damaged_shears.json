@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:function",
+  "function": "coppershears:recipe/blast_furnace_smelts_damaged_shears",
+  "environment": "coppershears:default",
+  "structure": "coppershears:platform",
+  "max_ticks": 200
+}

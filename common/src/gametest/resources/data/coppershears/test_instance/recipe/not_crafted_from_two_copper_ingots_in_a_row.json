@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:function",
+  "function": "coppershears:recipe/not_crafted_from_two_copper_ingots_in_a_row",
+  "environment": "coppershears:default",
+  "structure": "coppershears:platform",
+  "max_ticks": 100
+}
