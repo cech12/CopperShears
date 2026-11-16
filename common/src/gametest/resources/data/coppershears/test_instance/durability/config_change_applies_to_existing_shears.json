@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:function",
+  "function": "coppershears:durability/config_change_applies_to_existing_shears",
+  "environment": "coppershears:durability_dynamic",
+  "structure": "coppershears:platform",
+  "max_ticks": 100
+}

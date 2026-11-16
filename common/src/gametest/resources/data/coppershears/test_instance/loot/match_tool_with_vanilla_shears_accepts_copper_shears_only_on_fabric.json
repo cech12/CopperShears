@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:function",
+  "function": "coppershears:loot/match_tool_with_vanilla_shears_accepts_copper_shears_only_on_fabric",
+  "environment": "coppershears:default",
+  "structure": "coppershears:platform",
+  "max_ticks": 100
+}

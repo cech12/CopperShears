@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:function",
+  "function": "coppershears:item/is_in_tools_and_utilities_tab",
+  "environment": "coppershears:default",
+  "structure": "coppershears:platform",
+  "max_ticks": 100
+}

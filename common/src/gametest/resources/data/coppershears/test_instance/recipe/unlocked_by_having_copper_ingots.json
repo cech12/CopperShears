@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:function",
+  "function": "coppershears:recipe/unlocked_by_having_copper_ingots",
+  "environment": "coppershears:default",
+  "structure": "coppershears:platform",
+  "max_ticks": 100
+}

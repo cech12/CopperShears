@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:function",
+  "function": "coppershears:repair/grindstone_result_follows_config",
+  "environment": "coppershears:default",
+  "structure": "coppershears:platform",
+  "max_ticks": 100
+}
