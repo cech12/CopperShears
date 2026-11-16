@@ -66,8 +66,8 @@ public final class MetaTests {
 
     /**
      * The platform name of the mod (IPlatformHelper#getPlatformName) names the loader that actually runs. Tests with
-     * intended loader differences and {@link de.cech12.coppershears.gametest.KnownIssues} rely on it. Regression: the
-     * Fabric version reported "NeoForge".
+     * intended loader differences and {@link de.cech12.coppershears.gametest.KnownIssues} rely on it. Regression known
+     * from Ceramic Shears: its Fabric version reported "NeoForge".
      */
     public static void platformNameMatchesTheLoader(GameTestHelper helper) {
         List<String> running = LOADER_CLASSES.entrySet().stream()
