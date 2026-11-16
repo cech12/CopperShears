@@ -421,6 +421,12 @@ public final class RecipeTests {
     public static void notPossibleWhenUnbreakable(GameTestHelper helper) {
         ItemStack result = craft(helper, CraftingInput.of(2, 1, List.of(TestUtils.copperShears(), TestUtils.copperShears())));
         helper.assertTrue(result.isEmpty(), "unbreakable copper shears can be combined: " + result);
+        ServerPlayer player = TestUtils.player(helper, GameType.SURVIVAL, ItemStack.EMPTY);
+        GrindstoneMenu grindstone = new GrindstoneMenu(0, player.getInventory(), ContainerLevelAccess.create(helper.getLevel(), helper.absolutePos(TestUtils.CENTER)));
+        ItemStack grindstoneResult = combine(grindstone, TestUtils.copperShears(), TestUtils.copperShears());
+        helper.assertTrue(grindstoneResult.isEmpty(), "unbreakable copper shears can be combined in a grindstone: " + grindstoneResult);
+        ItemStack anvilResult = combine(anvil(helper), TestUtils.copperShears(), TestUtils.copperShears());
+        helper.assertTrue(anvilResult.isEmpty(), "unbreakable copper shears can be combined in an anvil: " + anvilResult);
         helper.succeed();
     }
 
