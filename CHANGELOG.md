@@ -3,7 +3,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [this versioning scheme](https://gist.github.com/cech12/69319028e88c50349a6b044000a6607b).
 
-## [26.3-4.2.1.0] - 2026-10-01
+## [26.3-2.2.1.1] - 2026-11-16
+### Fixed
+- copper shears combined in a grindstone stored a fixed max durability, so later changes of the durability config did not apply to them (found by the new game tests) https://github.com/cech12/WoodenShears/issues/51
+- the tooltip of the durability option in the config screen showed a wrong default value (179 instead of 181) (found by the new game tests) (Fabric/Quilt)
+
+## [26.3-2.2.1.0] - 2026-10-01
 ### Changed
 - updated to NeoForge 26.3.0.37-beta
 
