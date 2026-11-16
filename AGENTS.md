@@ -42,7 +42,7 @@ and game tests in one job, then the server start test, for every loader on every
 - All versions live in `gradle.properties`. Every new field must also be added to the `expandProps` map in
   `buildSrc/src/main/groovy/multiloader-common.gradle`.
 - One branch per Minecraft version, the default branch is `26.x`.
-- `CHANGELOG.md` follows Keep a Changelog, version scheme `<MC version>-<mod version>` (e.g. `1.21.11-3.7.1.0`).
+- `CHANGELOG.md` follows Keep a Changelog, version scheme `<MC version>-<mod version>` (e.g. `1.21.11-1.6.2.0`).
   Bugfix entries look like "... (thanks to X for the report) #N". Issues of the sister mods (Wooden Shears, Ceramic
   Shears, Copper Shears share most features) are referenced with their full URL.
 - Every new feature or bugfix gets a game test (bugfixes as regression test that names the issue), and the feature
