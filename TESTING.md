@@ -17,7 +17,7 @@ needs the release jars), and publishing on a tag only starts when build, game te
 Once a week (`.github/workflows/server-starttest-newest.yml`, also startable manually) the server start test runs with
 the newest loader and dependency versions. It does not block releases, but shows when a new loader or dependency
 release breaks the mod. GitHub runs scheduled workflows only on the default branch (`26.x`), so the older version
-branches (`26.2`, `26.1`, `1.21`, ...) never get the weekly run; start it manually (`workflow_dispatch`) on such a
+branches (`26.2`, `26.1`, `1.21.x`, ...) never get the weekly run; start it manually (`workflow_dispatch`) on such a
 branch if needed. GitHub deactivates scheduled workflows of public repositories after 60 days without activity in the
 repository, and mails about failed scheduled runs only go to the user who last changed the cron line. If the weekly
 run is deactivated, enable it again in the Actions tab of the repository.
@@ -138,6 +138,7 @@ config (`Services.CONFIG.getDurability()`).
 
 | Feature | Test(s) |
 |---|---|
+| New shears have the damage component 0 and the configured max damage like vanilla shears, also for direct component access (e.g. the `minecraft:damage` item predicate) | `durability/default_value` |
 | Default 181, read from the config definition of the loader (config spec on Forge/NeoForge, config class on Fabric), not only from the test environment | `durability/default_value` |
 | Custom value (200) | `durability/custom_value` |
 | Maximum value 10000 | `durability/maximum_value` |
@@ -247,7 +248,7 @@ expected result on each loader, so a change of this behavior is noticed.
 | The config screen tooltip (Fabric) shows the real default (181) and range (0 - 10000) in every language that translates it (fixed: it showed 179) | `resources/config_tooltip_shows_default_and_range` |
 | Every test function has a test instance that runs exactly this function | `meta/every_test_function_has_an_instance` |
 | The platform name of the mod names the running loader | `meta/platform_name_matches_the_loader` |
-| The release jar starts on a dedicated server, with and without integrations (Cloth Config and ModMenu on Fabric) | server start test |
+| The release jar starts on a dedicated server, with and without integrations (ModMenu on Fabric; Cloth Config is always installed as a required dependency) | server start test |
 
 ### Known issues (marked with `KnownIssues`)
 
