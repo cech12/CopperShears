@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:function",
+  "function": "coppershears:durability/below_zero_makes_shears_unbreakable",
+  "environment": "coppershears:durability_negative",
+  "structure": "coppershears:platform",
+  "max_ticks": 100
+}

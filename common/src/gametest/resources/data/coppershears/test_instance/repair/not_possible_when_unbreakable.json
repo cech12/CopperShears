@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:function",
+  "function": "coppershears:repair/not_possible_when_unbreakable",
+  "environment": "coppershears:durability_0",
+  "structure": "coppershears:platform",
+  "max_ticks": 100
+}
