@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [this versioning scheme](https://gist.github.com/cech12/69319028e88c50349a6b044000a6607b).
 
+## [26.1-2.0.2.2] - 2026-11-16
+### Fixed
+- copper shears combined in a grindstone stored a fixed max durability, so later changes of the durability config did not apply to them; already affected shears follow the config again (found by the new game tests) (all loaders) https://github.com/cech12/WoodenShears/issues/51
+- the tooltip of the durability option in the config screen showed a wrong default value (179 instead of 181) (found by the new game tests) (Fabric/Quilt)
+- copper shears repaired to full durability in an anvil or with mending kept a stored damage of 0, so they differed from new shears (found by the new game tests) (all loaders)
+
 ## [26.1-2.0.2.1] - 2026-05-23
 ### Fixed
 - fixed startup warning about missing mixin refmap
