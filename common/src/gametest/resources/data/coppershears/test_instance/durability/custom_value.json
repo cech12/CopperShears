@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:function",
+  "function": "coppershears:durability/custom_value",
+  "environment": "coppershears:durability_200",
+  "structure": "coppershears:platform",
+  "max_ticks": 100
+}
